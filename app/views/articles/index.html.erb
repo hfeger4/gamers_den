@@ -1,0 +1,11 @@
+<h1 align="center">All Articles</h1>
+
+<% if @articles %>
+  <% @articles.each do |article| %>
+    <ul>
+      <li>
+        <%= article.title %>
+      </li>
+    </ul>
+  <% end %>
+<% end %>

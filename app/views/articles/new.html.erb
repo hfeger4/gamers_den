@@ -1,0 +1,11 @@
+<h1 align="center">Create an Article</h1>
+
+<%= form_for(@article, :html => {class:"form-horizontal", role:"form"}) do |f| %>
+  <%= f.label :title %>
+  <%= f.text_field :title, placeholder: "Title of article", autofocus: true %>
+
+  <%= f.label :description %>
+  <%= f.text_area :description, rows: 10 %>
+
+  <%= f.submit %>
+<% end %>
